@@ -1,6 +1,6 @@
 /*
- * File: 1-last_digit.c
- * Auth: Brennan D Baraban
+ * File: 7-print_tebahpla.c
+ * Auth: Alex
  */
 
 #include <stdio.h>
