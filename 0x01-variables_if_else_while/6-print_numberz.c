@@ -1,6 +1,6 @@
 /*
  * File: 6-print_numberz.c
- * Auth: Brennan D Baraban
+ * Auth: Alex
  */
 #include <stdio.h>
 
@@ -11,15 +11,12 @@
  */
 int main(void)
 {
-  int num = 0;
-
-  while (num < 10)
-  {
-    putchar(num + '0');
-    num++;
-  }
-
-  putchar('\n');
-
-  return (0);
+int num = 0;
+while (num < 10)
+{
+putchar(num + '0');
+num++;
+}
+putchar('\n');
+return (0);
 }
