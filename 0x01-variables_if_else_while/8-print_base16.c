@@ -12,23 +12,23 @@
  */
 int main(void)
 {
-  int digit = 48;
+int digit = 48;
 
-  while (digit <= 57)
-  {
-    putchar(digit);
-    digit++;
-  }
+while (digit <= 57)
+{
+putchar(digit);
+digit++;
+}
 
-  digit = 97;
+digit = 97;
 
-  while (digit <= 102)
-  {
-    putchar(digit);
-    digit++;
-  }
+while (digit <= 102)
+{
+putchar(digit);
+digit++;
+}
 
-  putchar('\n');
+putchar('\n');
 
-  return (0);
+return (0);
 }
