@@ -1,32 +1,34 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * print_fizz_buzz - prints FizzBuzz up to a given number
- * @n: the maximum number to print
- *
- * Return: void
+ * print_fizzbuzz - print the numbers from 1 to 100, replacing multiples of 3 with Fizz,
+ * multiples of 5 with Buzz, and multiples of both 3 and 5 with FizzBuzz.
  */
-void print_fizz_buzz(int n)
+void print_fizzbuzz(void)
 {
-	int i;
+    int i;
 
-	for (i = 1; i <= n; i++)
-	{
-		if (i % 3 == 0 && i % 5 == 0)
-			printf("FizzBuzz ");
-		else if (i % 3 == 0)
-			printf("Fizz ");
-		else if (i % 5 == 0)
-			printf("Buzz ");
-		else
-			printf("%d ", i);
-	}
-	_putchar('\n');
+    for (i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            printf("FizzBuzz ");
+        } else if (i % 3 == 0) {
+            printf("Fizz ");
+        } else if (i % 5 == 0) {
+            printf("Buzz ");
+        } else {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
 }
 
+/**
+ * main - entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	print_fizz_buzz(100);
-	return (0);
+    print_fizzbuzz();
+    return (0);
 }
