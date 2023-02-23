@@ -17,9 +17,13 @@ void print_fizzbuzz(void)
             printf("Buzz ");
         } else {
             printf("%d ", i);
-        }
-    }
-    printf("\n");
+}
+if (i == 100){
+continue;
+printf(" ");
+}
+}
+printf("\n");
 }
 
 /**
