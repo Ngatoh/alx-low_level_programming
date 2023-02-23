@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * print_fizz_buzz - prints FizzBuzz up to a given number
