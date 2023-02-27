@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _strcpy - Copies the string pointed to by src, including the terminating null byte (\0),
+ * _strcpy - Copies the string pointed to by src,
+ * including the terminating null byte (\0),
  *           to the buffer pointed to by dest.
  *
  * @dest: A pointer to the destination array where the content is to be copied.
@@ -10,16 +11,16 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-    char *start = dest;
+char *start = dest;
 
-    while (*src != '\0')
-    {
-        *dest = *src;
-        dest++;
-        src++;
-    }
+while (*src != '\0')
+{
+*dest = *src;
+dest++;
+src++;
+}
 
-    *dest = '\0';
+*dest = '\0';
 
-    return start;
+return (start);
 }
