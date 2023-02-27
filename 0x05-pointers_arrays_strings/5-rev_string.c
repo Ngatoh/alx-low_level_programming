@@ -7,19 +7,19 @@
  */
 void rev_string(char *s)
 {
-  int len = 0;
-  char tmp;
-  int i = 0;
+int len = 0;
+char tmp;
+int i = 0;
 
-  /* Get length of string */
-  while (*(s + len))
-    len++;
+/* Get length of string */
+while (*(s + len))
+len++;
 
-  /* Swap characters from opposite ends of string */
-  for (i = 0; i < len / 2; i++)
-  {
-    tmp = *(s + i);
-    *(s + i) = *(s + len - i - 1);
-    *(s + len - i - 1) = tmp;
-  }
+/* Swap characters from opposite ends of string */
+for (i = 0; i < len / 2; i++)
+{
+tmp = *(s + i);
+*(s + i) = *(s + len - i - 1);
+*(s + len - i - 1) = tmp;
+}
 }
