@@ -1,0 +1,41 @@
+#include "main.h"
+/* _strcat.c */
+
+/* This function concatenates the string pointed to by `src` to the end of the 
+ * string pointed to by `dest`. The resulting concatenated string is stored 
+ * in the `dest` buffer, overwriting the original null-terminating byte at 
+ * the end of `dest`. The function then adds a new null-terminating byte at 
+ * the end of the concatenated string.
+ *
+ * Parameters:
+ * - `dest`: a pointer to the buffer where the concatenated string will be 
+ *   stored. This buffer must be large enough to contain both `dest` and `src`.
+ * - `src`: a pointer to the null-terminated string that will be appended to 
+ *   `dest`.
+ *
+ * Return:
+ * - On success, the function returns a pointer to the resulting concatenated 
+ *   string (i.e., the same as `dest`).
+ */
+char *_strcat(char *dest, const char *src)
+{
+    /* Save a copy of the `dest` pointer so that we can return it later */
+    char *result = dest;
+
+    /* Advance `dest` pointer to the end of the string */
+    while (*dest != '\0')
+        dest++;
+
+    /* Copy `src` string to the end of `dest` */
+    while (*src != '\0') {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+
+    /* Add new null-terminating byte at the end of the concatenated string */
+    *dest = '\0';
+
+    /* Return a pointer to the resulting concatenated string */
+    return result;
+}
