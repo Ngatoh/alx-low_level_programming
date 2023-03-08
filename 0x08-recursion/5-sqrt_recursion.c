@@ -2,10 +2,13 @@
 
 /**
  * _sqrt_recursion - Returns the natural square root of a number
- * @n: The number to find the square root of
+ * @n: The number to find the square root of using i
+ * @i: The current value to test for the square root
  *
  * Return: The square root of n, or -1 if n doesn't have square root
  */
+int sqrt_helper(int n, int i);
+
 int _sqrt_recursion(int n)
 {
 if (n < 0)
