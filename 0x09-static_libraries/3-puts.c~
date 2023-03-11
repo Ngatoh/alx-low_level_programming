@@ -1,0 +1,6 @@
+#include "main.h"
+void _puts(char *s)
+{
+        /* TODO: Implement the function */
+        return (0);
+}
